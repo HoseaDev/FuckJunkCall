@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew build:*)",
+      "Bash(./gradlew assembleDebug:*)",
+      "Bash(/usr/libexec/java_home:*)",
+      "Bash(./gradlew clean assembleDebug:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
