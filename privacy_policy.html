@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - FuckJunkCall</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --secondary-color: #42a5f5;
+            --text-color: #333333;
+            --light-gray: #f5f5f5;
+            --border-color: #e0e0e0;
+            --success-color: #4caf50;
+            --warning-color: #ff9800;
+            --error-color: #f44336;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 80px;
+            width: 80px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            color: var(--text-color);
+            margin: 15px 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: var(--light-gray);
+            padding: 15px;
+            border-left: 4px solid var(--success-color);
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid var(--warning-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            border-left: 4px solid var(--error-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background-color: var(--light-gray);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .data-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, var(--light-gray), #e8f5e8);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        .success-icon::before {
+            content: "✓";
+            color: var(--success-color);
+        }
+
+        .warning-icon::before {
+            content: "⚠";
+            color: var(--warning-color);
+        }
+
+        .info-icon::before {
+            content: "ℹ";
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px;
+            }
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .scroll-to-top:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="ic_launcher.png" alt="FuckJunkCall Logo">
+                <span class="logo-text">FuckJunkCall</span>
+            </div>
+            <div class="tagline">陌生来电拦截器</div>
+        </header>
+
+        <div class="update-date">
+            最后更新时间：2025年11月22日
+        </div>
+
+        <div class="section">
+            <h2><span class="icon info-icon"></span>隐私政策概览</h2>
+            <div class="highlight">
+                <p><strong>核心原则：</strong>FuckJunkCall 致力于保护您的隐私。我们采取最小化数据收集原则，所有数据处理均在您的设备本地进行，不会上传到任何服务器。</p>
+            </div>
+            <p>本隐私政策说明了 FuckJunkCall（以下简称"本应用"）如何收集、使用、存储和保护您的个人信息。使用本应用即表示您同意本政策中描述的做法。</p>
+        </div>
+
+        <div class="section">
+            <h2>我们收集的信息</h2>
+
+            <h3>1. 来电信息</h3>
+            <ul>
+                <li><strong>电话号码：</strong>当有来电时，应用会读取来电号码用于判断是否需要拦截</li>
+                <li><strong>通话记录：</strong>仅在需要时访问通话记录权限，实际不会主动读取或存储通话历史</li>
+            </ul>
+
+            <h3>2. 联系人信息</h3>
+            <ul>
+                <li><strong>通讯录访问：</strong>为判断来电号码是否为已知联系人，应用需要读取您的通讯录</li>
+                <li><strong>数据处理：</strong>通讯录数据仅在本地进行比对，不会上传或存储</li>
+            </ul>
+
+            <h3>3. 短信相关信息</h3>
+            <ul>
+                <li><strong>发送短信：</strong>在您启用自动回复功能时，应用会向您指定的号码发送预设短信</li>
+                <li><strong>短信内容：</strong>短信内容由您自定义或使用默认模板</li>
+                <li><strong>短信记录：</strong>应用不会读取您的短信历史记录</li>
+            </ul>
+
+            <h3>4. 本地存储数据</h3>
+            <table class="data-table">
+                <tr>
+                    <th>数据类型</th>
+                    <th>存储位置</th>
+                    <th>存储目的</th>
+                </tr>
+                <tr>
+                    <td>拦截记录</td>
+                    <td>设备本地数据库</td>
+                    <td>供您查看拦截历史</td>
+                </tr>
+                <tr>
+                    <td>白名单号码</td>
+                    <td>设备本地数据库</td>
+                    <td>确保特定号码不被拦截</td>
+                </tr>
+                <tr>
+                    <td>用户设置</td>
+                    <td>设备本地存储</td>
+                    <td>保存您的应用偏好设置</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>我们如何使用您的信息</h2>
+
+            <div class="highlight">
+                <h3><span class="icon success-icon"></span>核心用途</h3>
+                <p>本应用收集的所有信息仅用于以下明确目的：</p>
+                <ul>
+                    <li><strong>来电拦截：</strong>判断来电号码是否需要拦截</li>
+                    <li><strong>自动回复：</strong>向被拦截的号码发送预设短信</li>
+                    <li><strong>功能改进：</strong>提供拦截记录查看和白名单管理功能</li>
+                    <li><strong>用户体验：</strong>记住您的设置偏好，避免重复配置</li>
+                </ul>
+            </div>
+
+            <h3>不会用于：</h3>
+            <ul>
+                <li>❌ 广告推送</li>
+                <li>❌ 用户画像分析</li>
+                <li>❌ 数据出售或共享</li>
+                <li>❌ 第三方服务集成</li>
+                <li>❌ 营销或推广</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>数据存储与安全</h2>
+
+            <h3>存储方式</h3>
+            <div class="highlight">
+                <p><strong>本地优先：</strong>所有个人数据均存储在您的设备本地，不会上传到云端服务器。</p>
+            </div>
+            <ul>
+                <li>使用 Android Room 数据库进行本地数据存储</li>
+                <li>采用 Android 标准的安全机制保护数据</li>
+                <li>数据仅在您的设备上处理和访问</li>
+            </ul>
+
+            <h3>安全措施</h3>
+            <ul>
+                <li><strong>访问控制：</strong>应用仅请求必要的系统权限</li>
+                <li><strong>数据加密：</strong>敏感数据采用 Android 系统级加密保护</li>
+                <li><strong>最小权限：</strong>严格遵循最小权限原则</li>
+                <li><strong>定期更新：</strong>及时修复安全漏洞</li>
+            </ul>
+
+            <div class="warning">
+                <h3><span class="icon warning-icon"></span>重要提醒</h3>
+                <p>虽然我们采取了多种安全措施，但没有任何系统是绝对安全的。建议您：</p>
+                <ul>
+                    <li>保持设备系统和应用为最新版本</li>
+                    <li>设置设备锁屏密码或生物识别</li>
+                    <li>不要 Root 您的设备</li>
+                    <li>仅在官方渠道下载应用</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>第三方服务</h2>
+
+            <div class="highlight">
+                <p><strong>无第三方集成：</strong>本应用不集成任何第��方分析工具、广告SDK或数据收集服务。</p>
+            </div>
+
+            <h3>系统级服务</h3>
+            <p>应用仅使用以下 Android 系统提供的服务：</p>
+            <ul>
+                <li><strong>电信服务：</strong>来电筛选和拦截功能</li>
+                <li><strong>短信管理器：</strong>发送自动回复短信</li>
+                <li><strong>联系人提供者：</strong>查询通讯录信息</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>您的权利</h2>
+
+            <h3>数据访问权</h3>
+            <ul>
+                <li><strong>查看拦截记录：</strong>随时查看被拦截的来电历史</li>
+                <li><strong>管理白名单：</strong>添加、编辑或删除白名单号码</li>
+                <li><strong>导出数据：</strong>可以通过应用导出您的个人数据</li>
+            </ul>
+
+            <h3>数据控制权</h3>
+            <ul>
+                <li><strong>清空记录：</strong>可以随时清空所有拦截记录</li>
+                <li><strong>关闭功能：</strong>可以随时关闭来电拦截功能</li>
+                <li><strong>卸载应用：</strong>卸载应用会删除所有相关数据</li>
+            </ul>
+
+            <h3>权限管理</h3>
+            <p>您可以随时在系统设置中：</p>
+            <ul>
+                <li>撤销已授予的应用权限</li>
+                <li>管理"来电筛选"角色权限</li>
+                <li>查看应用的权限使用情况</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>儿童隐私</h2>
+
+            <div class="warning">
+                <p><strong>年龄限制：</strong>本应用适用于年满 16 周岁的用户。我们不会故意收集 16 岁以下儿童的个人信息。</p>
+            </div>
+
+            <p>如果您是儿童的父母或监护人，并且发现您的孩子向我们提供了个人信息，请联系我们，我们将采取适当措施删除相关信息。</p>
+        </div>
+
+        <div class="section">
+            <h2>本政策的更新</h2>
+
+            <p>我们可能会不时更新本隐私政策以反映应用功能的变化或法律要求的变更。重大变更将通过以下方式通知您：</p>
+            <ul>
+                <li>在应用内显示更新通知</li>
+                <li>在应用商店更新说明中提及</li>
+                <li>通过其他适当方式提前通知</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>持续使用：</strong>在政策更新后继续使用本应用，即表示您接受更新后的条款。</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问、建议或投诉，请通过以下方式联系我们：</p>
+
+            <h4>📧 电子邮件</h4>
+            <p>hoseadev@gmail.com</p>
+
+            <h4>🐛 问题反馈</h4>
+            <p>GitHub: https://github.com/HoseaDev/FuckJunkCall/issues</p>
+
+            <h4>📱 应用内反馈</h4>
+            <p>您也可以通过应用内的反馈功能联系我们</p>
+
+            <p><em>我们将在收到您的反馈后尽快回复您。</em></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 FuckJunkCall. 保留所有权利。</p>
+            <p>本隐私政策的最后更新时间为：2025年11月22日</p>
+        </footer>
+    </div>
+
+    <a href="#" class="scroll-to-top" onclick="window.scrollToTop(); return false;">↑</a>
+
+    <script>
+        // 返回顶部按钮显示/隐藏
+        window.onscroll = function() {
+            const scrollToTop = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTop.style.display = 'block';
+            } else {
+                scrollToTop.style.display = 'none';
+            }
+        };
+
+        // 平滑滚动到顶部
+        window.scrollToTop = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为所有内部链接添加平滑滚动
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

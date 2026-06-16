@@ -4,7 +4,9 @@
       "Bash(./gradlew build:*)",
       "Bash(./gradlew assembleDebug:*)",
       "Bash(/usr/libexec/java_home:*)",
-      "Bash(./gradlew clean assembleDebug:*)"
+      "Bash(./gradlew clean assembleDebug:*)",
+      "Bash(sips:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

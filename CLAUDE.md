@@ -111,9 +111,8 @@ The app requires the following permissions (all declared in AndroidManifest.xml)
 - `READ_CONTACTS` - Check if caller is in contacts
 - `SEND_SMS` - Send auto-reply messages
 - `FOREGROUND_SERVICE` - Run foreground SMS service
-- `FOREGROUND_SERVICE_PHONE_CALL` - Foreground service type
+- `FOREGROUND_SERVICE_SHORT_SERVICE` - Foreground service type (Android 14+)
 - `POST_NOTIFICATIONS` - Show notifications (Android 13+)
-- `ROLE_CALL_SCREENING` - Act as call screening app (runtime permission)
 
 ### Services Configuration
 Two services are registered in AndroidManifest.xml:
@@ -123,7 +122,7 @@ Two services are registered in AndroidManifest.xml:
    - Intent filter: `android.telecom.CallScreeningService`
 
 2. **SmsService**: Sends SMS in foreground
-   - Foreground service type: `phoneCall`
+   - Foreground service type: `shortService`
    - Exported: false
 
 ## How It Works
